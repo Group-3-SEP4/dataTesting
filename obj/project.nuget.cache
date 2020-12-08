@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UwrXQmfn4DQd5g8rdahGMGM0fbwyBkiLTCZxvLzrWj7B6pwL5x1LEJqpH7DSozI/KDlm/Um3Vca6KIHmuibFRw==",
+  "dgSpecHash": "mTU4VzItGedp2r8DkD872s0zK9VDxqrjDDnX/3/ORx4WZrgDhMiCYa+dyS0ioCWmEbs8sPORgLoY3P4zxT/afA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rokas\\Desktop\\WebServiceTest\\WebServiceTest.csproj",
+  "projectFilePath": "C:\\Users\\Rokas\\Desktop\\dataTesting\\WebServiceTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rokas\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
     "C:\\Users\\Rokas\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",

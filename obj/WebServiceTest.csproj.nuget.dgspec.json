@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rokas\\Desktop\\WebServiceTest\\WebServiceTest.csproj": {}
+    "C:\\Users\\Rokas\\Desktop\\dataTesting\\WebServiceTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rokas\\Desktop\\WebServiceTest\\WebServiceTest.csproj": {
+    "C:\\Users\\Rokas\\Desktop\\dataTesting\\WebServiceTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rokas\\Desktop\\WebServiceTest\\WebServiceTest.csproj",
+        "projectUniqueName": "C:\\Users\\Rokas\\Desktop\\dataTesting\\WebServiceTest.csproj",
         "projectName": "WebServiceTest",
-        "projectPath": "C:\\Users\\Rokas\\Desktop\\WebServiceTest\\WebServiceTest.csproj",
+        "projectPath": "C:\\Users\\Rokas\\Desktop\\dataTesting\\WebServiceTest.csproj",
         "packagesPath": "C:\\Users\\Rokas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rokas\\Desktop\\WebServiceTest\\obj\\",
+        "outputPath": "C:\\Users\\Rokas\\Desktop\\dataTesting\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rokas\\AppData\\Roaming\\NuGet\\NuGet.Config",
