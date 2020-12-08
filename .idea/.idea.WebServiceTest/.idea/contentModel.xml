@@ -21,10 +21,7 @@
         </e>
       </e>
       <e p="packages" t="ExcludeRecursive" />
-      <e p="UnitTestCo2API.cs" t="Include" />
-      <e p="UnitTestConnection.cs" t="Include" />
       <e p="UnitTestSettingsAPI.cs" t="Include" />
-      <e p="UnitTestTemperatureAPI.cs" t="Include" />
       <e p="WebServiceTest.csproj" t="IncludeRecursive" />
       <e p="WebServiceTest.sln" t="IncludeFlat" />
     </e>

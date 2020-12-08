@@ -1,4 +1,8 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fef8c678_002Dc060_002D44ef_002Dac6c_002Dcd44ceb7b56c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="UnitTestCo2Api" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;Project Location="C:\Users\krogh\Desktop\SEP4 Source Code\Data Unit Test" Presentation="&amp;lt;WebServiceTest&amp;gt;" /&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=85153769_002D3c81_002D44ae_002D88e6_002Dc45f9080b55d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestGetSettings" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::E1182062-AC92-4BD2-B8D6-492A59769BF4::.NETCoreApp,Version=v3.1::WebServiceTest.UnitTestSettingsApi.TestGetSettings&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::E1182062-AC92-4BD2-B8D6-492A59769BF4::.NETCoreApp,Version=v3.1::WebServiceTest.UnitTestSettingsApi.TestConnection&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::E1182062-AC92-4BD2-B8D6-492A59769BF4::.NETCoreApp,Version=v3.1::WebServiceTest.UnitTestSettingsApi.TestGetSettingsID&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

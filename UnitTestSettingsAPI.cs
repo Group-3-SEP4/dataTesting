@@ -2,6 +2,8 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NUnit.Framework;
 using System;
 using System.Net.Http;
+using System.Threading.Tasks;
+using Newtonsoft.Json.Linq;
 using Assert = NUnit.Framework.Assert;
 
 namespace WebServiceTest
@@ -9,27 +11,42 @@ namespace WebServiceTest
     [TestClass]
     public class UnitTestSettingsApi
     {
+        
         [Test]
-        public void TestConnection()
+        public async Task TestGetSettings()
         {
+            String URL = "https://localhost:5001/Settings?deviceEUI=0004A30B00219CAC";
+            
             using (var client = new HttpClient())
             {
-                String URL = "https://localhost:5001/Settings";
-                var response = client.GetStringAsync(URL);
-                string result = response.ToString();
-                Assert.IsTrue(result != null);
+                using (HttpResponseMessage responseMessage = await client.GetAsync(URL))
+                {
+                    using (HttpContent content = responseMessage.Content)
+                    {
+                        var data = await content.ReadAsStringAsync();
+                        var result = JObject.Parse(data)["settingsId"].ToString();
+                        Assert.IsNotNull(result);
+                    }
+                }
             }
         }
-
-        //TODO will need changing after adding user to get specific device/room co2 
+        
         [Test]
-        public void TestGetSettings()
+        public async Task TestGetSettingsID()
         {
+            String URL = "https://localhost:5001/Settings?deviceEUI=0004A30B00219CAC";
+            
             using (var client = new HttpClient())
             {
-                String URL = "https://localhost:5001/Settings";
-                var response = client.GetStringAsync(URL);
-                Assert.IsTrue(!response.Equals("[]"));
+                using (HttpResponseMessage responseMessage = await client.GetAsync(URL))
+                {
+                    using (HttpContent content = responseMessage.Content)
+                    {
+                        var data = await content.ReadAsStringAsync();
+                        var result = JObject.Parse(data)["settingsId"].ToString();
+                        Assert.AreEqual("4", result);
+                    }
+                }
             }
         }
     }

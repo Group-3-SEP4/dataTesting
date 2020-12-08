@@ -20,25 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9645d0ef-8d11-45de-9b85-ea7dea493368" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/UnitTestConnection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnitTestTemperatureAPI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebServiceTest.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTestCo2API.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTestCo2API.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebServiceTest/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebServiceTest/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebServiceTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebServiceTest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTestCo2API.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTestConnection.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTestSettingsAPI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTestSettingsAPI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTestTemperatureAPI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServiceTest.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/WebServiceTest.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/WebServiceTest.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/WebServiceTest.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/WebServiceTest.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/WebServiceTest.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/WebServiceTest.runtimeconfig.dev.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/WebServiceTest.runtimeconfig.dev.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/WebServiceTest.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/WebServiceTest.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/WebServiceTest.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/WebServiceTest.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/WebServiceTest.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/WebServiceTest.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/WebServiceTest.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/WebServiceTest.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/WebServiceTest.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/WebServiceTest.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/WebServiceTest.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/WebServiceTest.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/WebServiceTest.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/WebServiceTest.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/WebServiceTest.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/WebServiceTest.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/WebServiceTest.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/WebServiceTest.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +47,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/UnitTestCo2API.cs" />
-        <option value="$PROJECT_DIR$/UnitTestConnection.cs" />
         <option value="$PROJECT_DIR$/UnitTestTemperatureAPI.cs" />
+        <option value="$PROJECT_DIR$/UnitTestConnection.cs" />
+        <option value="$PROJECT_DIR$/Models/Measurement.cs" />
+        <option value="$PROJECT_DIR$/UnitTestMeasurementAPI.cs" />
+        <option value="$PROJECT_DIR$/UnitTestSettingsAPI.cs" />
       </list>
     </option>
   </component>
@@ -82,6 +80,8 @@
       <updated>1606922131025</updated>
       <workItem from="1606922167316" duration="2034000" />
       <workItem from="1607329650197" duration="490000" />
+      <workItem from="1607424430415" duration="4438000" />
+      <workItem from="1607432477385" duration="2650000" />
     </task>
     <servers />
   </component>
