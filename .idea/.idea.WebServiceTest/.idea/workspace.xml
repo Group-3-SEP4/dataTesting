@@ -19,21 +19,25 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9645d0ef-8d11-45de-9b85-ea7dea493368" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebServiceTest/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebServiceTest/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebServiceTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebServiceTest/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ddb27b81-a1c5-4100-abbe-25bbf7766cd9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/MesurementsTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RoomsTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SettingsTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UnitTestCo2API.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTestConnection.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTestSettingsAPI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTestSettingsAPI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTestTemperatureAPI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServiceTest.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/WebServiceTest.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTestSettingsAPI.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/WebServiceTest.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/WebServiceTest.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/WebServiceTest.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/WebServiceTest.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/WebServiceTest.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/WebServiceTest.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/WebServiceTest.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/WebServiceTest.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/WebServiceTest.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/WebServiceTest.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/WebServiceTest.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/WebServiceTest.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/WebServiceTest.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/WebServiceTest.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/WebServiceTest.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/WebServiceTest.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/WebServiceTest.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/WebServiceTest.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/WebServiceTest.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/WebServiceTest.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,15 +51,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/UnitTestCo2API.cs" />
-        <option value="$PROJECT_DIR$/UnitTestTemperatureAPI.cs" />
-        <option value="$PROJECT_DIR$/UnitTestConnection.cs" />
-        <option value="$PROJECT_DIR$/Models/Measurement.cs" />
-        <option value="$PROJECT_DIR$/UnitTestMeasurementAPI.cs" />
         <option value="$PROJECT_DIR$/UnitTestSettingsAPI.cs" />
+        <option value="$PROJECT_DIR$/RoomTest.cs" />
+        <option value="$PROJECT_DIR$/SettingsTest.cs" />
+        <option value="$PROJECT_DIR$/RoomsTest.cs" />
+        <option value="$PROJECT_DIR$/MesurementsTest.cs" />
       </list>
     </option>
   </component>
-  <component name="ProjectId" id="1l6emuJM383P2BhMgotlQ4snGYO" />
+  <component name="ProjectId" id="1lJqEf4vwuaMQpFxcKViMcSzeOF" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -64,24 +68,21 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="RiderMsTestUnitTestingPageId" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9645d0ef-8d11-45de-9b85-ea7dea493368" name="Default Changelist" comment="" />
-      <created>1606922131025</created>
+      <changelist id="ddb27b81-a1c5-4100-abbe-25bbf7766cd9" name="Default Changelist" comment="" />
+      <created>1607325439041</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1606922131025</updated>
-      <workItem from="1606922167316" duration="2034000" />
-      <workItem from="1607329650197" duration="490000" />
-      <workItem from="1607424430415" duration="4438000" />
-      <workItem from="1607432477385" duration="2650000" />
+      <updated>1607325439041</updated>
+      <workItem from="1607325460897" duration="3831000" />
+      <workItem from="1607356105801" duration="818000" />
+      <workItem from="1607432521022" duration="1927000" />
     </task>
     <servers />
   </component>
@@ -100,16 +101,8 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="781" y="164" key="SettingsEditor" timestamp="1606923936244">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state x="781" y="164" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1606923936244" />
   </component>
 </project>
