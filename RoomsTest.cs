@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
 using NUnit.Framework;
@@ -69,6 +70,28 @@ namespace WebServiceTest
                         {
                             Assert.Fail();
                         }
+                    }
+                }
+            }
+        }
+        
+        [Test]
+        public async Task TestUpdateRoom() {
+            string contentPost = "{\"roomId\": 4,\"settingsId\": 4,\"name\": \"Living room\", \"deviceEui\": \"0004A30B00219CAC\" }";
+            var buffer = System.Text.Encoding.UTF8.GetBytes(contentPost);
+            var byteContent = new ByteArrayContent(buffer);
+            byteContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+            String URL = "https://localhost:5001/Rooms?deviceEUI=0004A30B00219CAC";
+            
+            using (var client = new HttpClient())
+            {
+                using (HttpResponseMessage responseMessage = await client.PutAsync(URL, byteContent))
+                {
+                    using (HttpContent content = responseMessage.Content)
+                    {
+                        var data = await content.ReadAsStringAsync();
+                        var result = JObject.Parse(data)["roomId"].ToString();
+                        Assert.AreEqual("4", result);
                     }
                 }
             }
