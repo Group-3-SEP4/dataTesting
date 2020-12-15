@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\Rokas\\Desktop\\dataTesting\\WebServiceTest.csproj",
+    "projectUniqueName": "C:\\Users\\krogh\\Desktop\\SEP4 Source Code\\Data Unit Test\\WebServiceTest.csproj",
     "projectName": "WebServiceTest",
-    "projectPath": "C:\\Users\\Rokas\\Desktop\\dataTesting\\WebServiceTest.csproj",
-    "outputPath": "C:\\Users\\Rokas\\Desktop\\dataTesting\\obj\\",
+    "projectPath": "C:\\Users\\krogh\\Desktop\\SEP4 Source Code\\Data Unit Test\\WebServiceTest.csproj",
+    "outputPath": "C:\\Users\\krogh\\Desktop\\SEP4 Source Code\\Data Unit Test\\obj\\",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp3.1"
@@ -63,7 +63,7 @@
           "privateAssets": "all"
         }
       },
-      "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+      "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
     }
   }
 }
