@@ -8,7 +8,7 @@
           "build/netstandard1.0/coverlet.collector.targets": {}
         }
       },
-      "Microsoft.CodeCoverage/16.5.0": {
+      "Microsoft.CodeCoverage/16.9.0-preview-20201123-03": {
         "type": "package",
         "compile": {
           "lib/netcoreapp1.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {}
@@ -967,20 +967,35 @@
         "coverlet.collector.nuspec"
       ]
     },
-    "Microsoft.CodeCoverage/16.5.0": {
-      "sha512": "PM5YLtyN45EyUGePJpaNogndlaQPrMgQQXHKMhMESC6KfSVvt+j7+dxBi8NYC6X6dZVysf7ngwhSW3wwvPJRSQ==",
+    "Microsoft.CodeCoverage/16.9.0-preview-20201123-03": {
+      "sha512": "DIdsMDrZ0sDXXSaPtOMjYY8+2lInv5xFsmJbALiHnadOCKMeQXWSEjQh8BqE5T/EOCnTq9ymoInwPJWhvVXTSQ==",
       "type": "package",
-      "path": "microsoft.codecoverage/16.5.0",
+      "path": "microsoft.codecoverage/16.9.0-preview-20201123-03",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "build/netstandard1.0/CodeCoverage/CodeCoverage.config",
         "build/netstandard1.0/CodeCoverage/CodeCoverage.exe",
+        "build/netstandard1.0/CodeCoverage/VanguardInstrumentationProfiler_x86.config",
+        "build/netstandard1.0/CodeCoverage/amd64/CodeCoverage.exe",
+        "build/netstandard1.0/CodeCoverage/amd64/VanguardInstrumentationProfiler_x64.config",
         "build/netstandard1.0/CodeCoverage/amd64/covrun64.dll",
         "build/netstandard1.0/CodeCoverage/amd64/msdia140.dll",
+        "build/netstandard1.0/CodeCoverage/amd64/msvcdis140.dll",
+        "build/netstandard1.0/CodeCoverage/amd64/msvcp140.dll",
+        "build/netstandard1.0/CodeCoverage/amd64/msvcp140_atomic_wait.dll",
+        "build/netstandard1.0/CodeCoverage/amd64/vcruntime140.dll",
+        "build/netstandard1.0/CodeCoverage/amd64/vcruntime140_1.dll",
         "build/netstandard1.0/CodeCoverage/codecoveragemessages.dll",
+        "build/netstandard1.0/CodeCoverage/coreclr/Microsoft.VisualStudio.CodeCoverage.Shim.dll",
         "build/netstandard1.0/CodeCoverage/covrun32.dll",
         "build/netstandard1.0/CodeCoverage/msdia140.dll",
+        "build/netstandard1.0/CodeCoverage/msvcdis140.dll",
+        "build/netstandard1.0/CodeCoverage/msvcp140.dll",
+        "build/netstandard1.0/CodeCoverage/msvcp140_atomic_wait.dll",
+        "build/netstandard1.0/CodeCoverage/vcruntime140.dll",
+        "build/netstandard1.0/InstrumentationEngine/x64/MicrosoftInstrumentationEngine_x64.dll",
+        "build/netstandard1.0/InstrumentationEngine/x86/MicrosoftInstrumentationEngine_x86.dll",
         "build/netstandard1.0/Microsoft.CodeCoverage.props",
         "build/netstandard1.0/Microsoft.CodeCoverage.targets",
         "build/netstandard1.0/Microsoft.VisualStudio.TraceDataCollector.dll",
@@ -999,7 +1014,7 @@
         "build/netstandard1.0/zh-Hant/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
         "lib/net45/Microsoft.VisualStudio.CodeCoverage.Shim.dll",
         "lib/netcoreapp1.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll",
-        "microsoft.codecoverage.16.5.0.nupkg.sha512",
+        "microsoft.codecoverage.16.9.0-preview-20201123-03.nupkg.sha512",
         "microsoft.codecoverage.nuspec"
       ]
     },
@@ -3809,25 +3824,26 @@
     ".NETCoreApp,Version=v3.1": [
       "MSTest.TestAdapter >= 2.1.0",
       "MSTest.TestFramework >= 2.1.0",
+      "Microsoft.CodeCoverage >= 16.9.0-preview-20201123-03",
       "Microsoft.NET.Test.Sdk >= 16.5.0",
       "NUnit >= 3.12.0",
       "coverlet.collector >= 1.2.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Rokas\\.nuget\\packages\\": {}
+    "C:\\Users\\krogh\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rokas\\Desktop\\dataTesting\\WebServiceTest.csproj",
+      "projectUniqueName": "C:\\Users\\krogh\\Desktop\\SEP4 Source Code\\Data Unit Test\\WebServiceTest.csproj",
       "projectName": "WebServiceTest",
-      "projectPath": "C:\\Users\\Rokas\\Desktop\\dataTesting\\WebServiceTest.csproj",
-      "packagesPath": "C:\\Users\\Rokas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rokas\\Desktop\\dataTesting\\obj\\",
+      "projectPath": "C:\\Users\\krogh\\Desktop\\SEP4 Source Code\\Data Unit Test\\WebServiceTest.csproj",
+      "packagesPath": "C:\\Users\\krogh\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\krogh\\Desktop\\SEP4 Source Code\\Data Unit Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Rokas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\krogh\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3859,6 +3875,10 @@
             "target": "Package",
             "version": "[2.1.0, )"
           },
+          "Microsoft.CodeCoverage": {
+            "target": "Package",
+            "version": "[16.9.0-preview-20201123-03, )"
+          },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[16.5.0, )"
@@ -3887,7 +3907,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

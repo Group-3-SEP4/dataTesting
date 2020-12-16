@@ -10,6 +10,7 @@
         "dependencies": {
           "MSTest.TestAdapter": "2.1.0",
           "MSTest.TestFramework": "2.1.0",
+          "Microsoft.CodeCoverage": "16.9.0-preview-20201123-03",
           "Microsoft.NET.Test.Sdk": "16.5.0",
           "NUnit": "3.12.0",
           "coverlet.collector": "1.2.0"
@@ -19,11 +20,11 @@
         }
       },
       "coverlet.collector/1.2.0": {},
-      "Microsoft.CodeCoverage/16.5.0": {
+      "Microsoft.CodeCoverage/16.9.0-preview-20201123-03": {
         "runtime": {
           "lib/netcoreapp1.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {
             "assemblyVersion": "15.0.0.0",
-            "fileVersion": "16.0.28223.3002"
+            "fileVersion": "16.900.20.57002"
           }
         }
       },
@@ -49,7 +50,7 @@
       },
       "Microsoft.NET.Test.Sdk/16.5.0": {
         "dependencies": {
-          "Microsoft.CodeCoverage": "16.5.0",
+          "Microsoft.CodeCoverage": "16.9.0-preview-20201123-03",
           "Microsoft.TestPlatform.TestHost": "16.5.0"
         }
       },
@@ -710,12 +711,12 @@
       "path": "coverlet.collector/1.2.0",
       "hashPath": "coverlet.collector.1.2.0.nupkg.sha512"
     },
-    "Microsoft.CodeCoverage/16.5.0": {
+    "Microsoft.CodeCoverage/16.9.0-preview-20201123-03": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-PM5YLtyN45EyUGePJpaNogndlaQPrMgQQXHKMhMESC6KfSVvt+j7+dxBi8NYC6X6dZVysf7ngwhSW3wwvPJRSQ==",
-      "path": "microsoft.codecoverage/16.5.0",
-      "hashPath": "microsoft.codecoverage.16.5.0.nupkg.sha512"
+      "sha512": "sha512-DIdsMDrZ0sDXXSaPtOMjYY8+2lInv5xFsmJbALiHnadOCKMeQXWSEjQh8BqE5T/EOCnTq9ymoInwPJWhvVXTSQ==",
+      "path": "microsoft.codecoverage/16.9.0-preview-20201123-03",
+      "hashPath": "microsoft.codecoverage.16.9.0-preview-20201123-03.nupkg.sha512"
     },
     "Microsoft.CSharp/4.0.1": {
       "type": "package",

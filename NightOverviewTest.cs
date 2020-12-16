@@ -16,7 +16,7 @@ namespace WebServiceTest
         [Test]
         public void TestConnectionToEndPoint()
         {
-            var url = "https://localhost:5001/NightOverview/Today?deviceEUI=0004A30B00219CAC";
+            var url = "https://localhost:5001/Overview/Today?deviceEUI=0004A30B00219CAC";
             try {
                 var myRequest = (HttpWebRequest)WebRequest.Create(url);
                 var response = (HttpWebResponse)myRequest.GetResponse();
@@ -37,7 +37,7 @@ namespace WebServiceTest
         [Test]
         public async Task TestGetTodaysNightOverviewNotNull() 
         {
-            String url = "https://localhost:5001/NightOverview/Today?deviceEUI=0004A30B00219CB5";
+            String url = "https://localhost:5001/Overview/Today?deviceEUI=0004A30B00219CB5";
             
             using (var client = new HttpClient())
             {
@@ -58,7 +58,7 @@ namespace WebServiceTest
         [Test]
         public async Task TestGetTodaysNightOverviewIsNotEmpty() 
         {
-            String url = "https://localhost:5001/NightOverview/Today?deviceEUI=0004A30B00219CB5";
+            String url = "https://localhost:5001/Overview/Today?deviceEUI=0004A30B00219CB5";
             
             using (var client = new HttpClient())
             {
@@ -82,7 +82,7 @@ namespace WebServiceTest
         [Test]
         public async Task TestGetTodaysNightOverviewIsNotNullNorZero() 
         {
-            String url = "https://localhost:5001/NightOverview/Today?deviceEUI=0004A30B00219CB5";
+            String url = "https://localhost:5001/Overview/Today?deviceEUI=0004A30B00219CB5";
             
             using (var client = new HttpClient())
             {
