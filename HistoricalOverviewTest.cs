@@ -53,7 +53,7 @@ namespace WebServiceTest
                         var data = await content.ReadAsStringAsync();
                         var jObject = JObject.Parse(data)["detailedCo2List"].ToString();
                         var jArray = JArray.Parse(jObject);
-                        var result = JObject.Parse(jArray[0].ToString())["co2"].ToString();
+                        var result = JObject.Parse(jArray[0].ToString())["value"].ToString();
                         Assert.IsNotNull(result);
                     }
                 }
@@ -78,7 +78,7 @@ namespace WebServiceTest
                         var data = await content.ReadAsStringAsync();
                         var jObject = JObject.Parse(data)["detailedCo2List"].ToString();
                         var jArray = JArray.Parse(jObject);
-                        var result = JObject.Parse(jArray[0].ToString())["co2"].ToString();
+                        var result = JObject.Parse(jArray[0].ToString())["value"].ToString();
                         Assert.IsNotEmpty(result);
                     }
                 }
@@ -93,7 +93,7 @@ namespace WebServiceTest
             string validTo = "2020-12-05";
             
             var URL = "https://localhost:5001/HistoricalOverview?deviceEUI=0004A30B00219CB5&validFrom=" + validFrom + "&validTo=" + validTo;
-            
+
             using (var client = new HttpClient())
             {
                 using (HttpResponseMessage responseMessage = await client.GetAsync(URL))
@@ -103,12 +103,11 @@ namespace WebServiceTest
                         var data = await content.ReadAsStringAsync();
                         var jObject = JObject.Parse(data)["detailedCo2List"].ToString();
                         var jArray = JArray.Parse(jObject);
-                        var result = JObject.Parse(jArray[0].ToString())["co2"].ToString();
+                        var result = JObject.Parse(jArray[0].ToString())["value"].ToString();
                         if (result == null || result == "0") Assert.Fail();
                     }
                 }
             }
-            
         }
     }
 }

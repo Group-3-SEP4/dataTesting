@@ -1,5 +1,5 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b7cfd3c4_002D2682_002D4942_002Dbde3_002D87c6ed9d038c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestConnectionToEndPoint" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;Project Location="C:\Users\krogh\Desktop\SEP4 Source Code\Data Unit Test" Presentation="&amp;lt;WebServiceTest&amp;gt;" /&gt;&#xD;
+  &lt;Project Location="C:\Users\Rokas\Desktop\dataTesting" Presentation="&amp;lt;WebServiceTest&amp;gt;" /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 </wpf:ResourceDictionary>
