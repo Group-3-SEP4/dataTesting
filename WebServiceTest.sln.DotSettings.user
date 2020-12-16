@@ -1,25 +1,5 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-<<<<<<< HEAD
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=180cc2a6_002D0833_002D423b_002Dafc9_002De6ba825bcef5/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from &amp;lt;WebServiceTest&amp;gt; #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::E1182062-AC92-4BD2-B8D6-492A59769BF4::.NETCoreApp,Version=v3.1::WebServiceTest.NightOverviewTest.TestGetTodaysNightOverview&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::E1182062-AC92-4BD2-B8D6-492A59769BF4::.NETCoreApp,Version=v3.1::WebServiceTest.MesurementsTest.TestGetCo2&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::E1182062-AC92-4BD2-B8D6-492A59769BF4::.NETCoreApp,Version=v3.1::WebServiceTest.NightOverviewTest.TestConnectionToEndPoint&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b7cfd3c4_002D2682_002D4942_002Dbde3_002D87c6ed9d038c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestConnectionToEndPoint" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Project Location="C:\Users\krogh\Desktop\SEP4 Source Code\Data Unit Test" Presentation="&amp;lt;WebServiceTest&amp;gt;" /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c071f10b_002D7b8e_002D4dc8_002Da892_002D3a7c0a6347da/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from &amp;lt;WebServiceTest&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::E1182062-AC92-4BD2-B8D6-492A59769BF4::.NETCoreApp,Version=v3.1::WebServiceTest.NightOverviewTest.TestGetTodaysNightOverview&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::E1182062-AC92-4BD2-B8D6-492A59769BF4::.NETCoreApp,Version=v3.1::WebServiceTest.MesurementsTest.TestGetCo2&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::E1182062-AC92-4BD2-B8D6-492A59769BF4::.NETCoreApp,Version=v3.1::WebServiceTest.NightOverviewTest.TestGetTodaysNightOverviewNotNull&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::E1182062-AC92-4BD2-B8D6-492A59769BF4::.NETCoreApp,Version=v3.1::WebServiceTest.NightOverviewTest.TestGetTodaysNightOverviewIsNotEmpty&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::E1182062-AC92-4BD2-B8D6-492A59769BF4::.NETCoreApp,Version=v3.1::WebServiceTest.NightOverviewTest.TestGetTodaysNightOverviewIsNotNullNorZero&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
-=======
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=180cc2a6_002D0833_002D423b_002Dafc9_002De6ba825bcef5/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from &amp;lt;WebServiceTest&amp;gt; #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;Project Location="C:\Users\Rokas\Desktop\dataTesting" Presentation="&amp;lt;WebServiceTest&amp;gt;" /&gt;&#xD;
-&lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c071f10b_002D7b8e_002D4dc8_002Da892_002D3a7c0a6347da/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from &amp;lt;WebServiceTest&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;Project Location="C:\Users\Rokas\Desktop\dataTesting" Presentation="&amp;lt;WebServiceTest&amp;gt;" /&gt;&#xD;
->>>>>>> 641a5daba8b3cf7cd0e6959dbdc61f4ec46e98f3
-&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
+</wpf:ResourceDictionary>

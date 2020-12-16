@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -11,12 +10,15 @@ using Assert = NUnit.Framework.Assert;
 namespace WebServiceTest
 {
     [TestClass]
-    public class NightOverviewTest
+    public class HistoricalOverviewTest
     {
         [Test]
         public void TestConnectionToEndPoint()
         {
-            var url = "https://localhost:5001/NightOverview/Today?deviceEUI=0004A30B00219CAC";
+            string validFrom = "2020-11-27";
+            string validTo = "2020-12-05";
+            
+            var url = "https://localhost:5001/HistoricalOverview?deviceEUI=0004A30B00219CB5&validFrom=" + validFrom + "&validTo=" + validTo;
             try {
                 var myRequest = (HttpWebRequest)WebRequest.Create(url);
                 var response = (HttpWebResponse)myRequest.GetResponse();
@@ -33,11 +35,14 @@ namespace WebServiceTest
                 Assert.Fail();
             }
         }
-        
+
         [Test]
-        public async Task TestGetTodaysNightOverviewNotNull() 
+        public async Task TestGetHistoricalOverviewNotNull()
         {
-            String url = "https://localhost:5001/NightOverview/Today?deviceEUI=0004A30B00219CB5";
+            string validFrom = "2020-11-27";
+            string validTo = "2020-12-05";
+            
+            var url = "https://localhost:5001/HistoricalOverview?deviceEUI=0004A30B00219CB5&validFrom=" + validFrom + "&validTo=" + validTo;
             
             using (var client = new HttpClient())
             {
@@ -46,19 +51,23 @@ namespace WebServiceTest
                     using (HttpContent content = responseMessage.Content)
                     {
                         var data = await content.ReadAsStringAsync();
-                        var jArray = JArray.Parse(data);
-                        var result = JObject.Parse(jArray[0].ToString())["humiMin"].ToString();
+                        var jObject = JObject.Parse(data)["detailedCo2List"].ToString();
+                        var jArray = JArray.Parse(jObject);
+                        var result = JObject.Parse(jArray[0].ToString())["co2"].ToString();
                         Assert.IsNotNull(result);
                     }
                 }
             }
-    
+            
         }
         
         [Test]
-        public async Task TestGetTodaysNightOverviewIsNotEmpty() 
+        public async Task TestGetHistoricalOverviewIsNotEmpty()
         {
-            String url = "https://localhost:5001/NightOverview/Today?deviceEUI=0004A30B00219CB5";
+            string validFrom = "2020-11-27";
+            string validTo = "2020-12-05";
+            
+            var url = "https://localhost:5001/HistoricalOverview?deviceEUI=0004A30B00219CB5&validFrom=" + validFrom + "&validTo=" + validTo;
             
             using (var client = new HttpClient())
             {
@@ -67,40 +76,39 @@ namespace WebServiceTest
                     using (HttpContent content = responseMessage.Content)
                     {
                         var data = await content.ReadAsStringAsync();
-                        var jArray = JArray.Parse(data);
-                        // Min Humidity
-                        var result = JObject.Parse(jArray[0].ToString())["humiMax"].ToString();
+                        var jObject = JObject.Parse(data)["detailedCo2List"].ToString();
+                        var jArray = JArray.Parse(jObject);
+                        var result = JObject.Parse(jArray[0].ToString())["co2"].ToString();
                         Assert.IsNotEmpty(result);
-                        if (result == null || result == "0") Assert.Fail();
-
                     }
                 }
             }
-    
+            
         }
         
         [Test]
-        public async Task TestGetTodaysNightOverviewIsNotNullNorZero() 
+        public async Task TestGetHistoricalOverviewIsNotNullNorZero()
         {
-            String url = "https://localhost:5001/NightOverview/Today?deviceEUI=0004A30B00219CB5";
+            string validFrom = "2020-11-27";
+            string validTo = "2020-12-05";
+            
+            var URL = "https://localhost:5001/HistoricalOverview?deviceEUI=0004A30B00219CB5&validFrom=" + validFrom + "&validTo=" + validTo;
             
             using (var client = new HttpClient())
             {
-                using (HttpResponseMessage responseMessage = await client.GetAsync(url))
+                using (HttpResponseMessage responseMessage = await client.GetAsync(URL))
                 {
                     using (HttpContent content = responseMessage.Content)
                     {
                         var data = await content.ReadAsStringAsync();
-                        var jArray = JArray.Parse(data);
-                        // Min Humidity
-                        var result = JObject.Parse(jArray[0].ToString())["tempAvg"].ToString();
+                        var jObject = JObject.Parse(data)["detailedCo2List"].ToString();
+                        var jArray = JArray.Parse(jObject);
+                        var result = JObject.Parse(jArray[0].ToString())["co2"].ToString();
                         if (result == null || result == "0") Assert.Fail();
-
                     }
                 }
             }
-    
+            
         }
-        
     }
 }
