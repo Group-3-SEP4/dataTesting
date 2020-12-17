@@ -1,4 +1,3 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NUnit.Framework;
 using System;
 using System.Net;
@@ -9,7 +8,6 @@ using Newtonsoft.Json.Linq;
 using Assert = NUnit.Framework.Assert;
 
 namespace WebServiceTest {
-    [TestClass]
     public class SettingsTest {
         [Test]
         public void TestConnectionToEndPoint() {
@@ -57,12 +55,9 @@ namespace WebServiceTest {
             byteContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
             String URL = "https://localhost:5001/Settings?deviceEUI=0004A30B00219CAC";
             
-            using (var client = new HttpClient())
-            {
-                using (HttpResponseMessage responseMessage = await client.PostAsync(URL, byteContent))
-                {
-                    using (HttpContent content = responseMessage.Content)
-                    {
+            using (var client = new HttpClient()) {
+                using (HttpResponseMessage responseMessage = await client.PostAsync(URL, byteContent)) {
+                    using (HttpContent content = responseMessage.Content) {
                         var data = await content.ReadAsStringAsync();
                         var result = JObject.Parse(data)["settingsId"].ToString();
                         Assert.AreEqual("5", result);

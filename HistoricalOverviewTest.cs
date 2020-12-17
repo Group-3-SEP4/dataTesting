@@ -7,14 +7,10 @@ using Newtonsoft.Json.Linq;
 using NUnit.Framework;
 using Assert = NUnit.Framework.Assert;
 
-namespace WebServiceTest
-{
-    [TestClass]
-    public class HistoricalOverviewTest
-    {
+namespace WebServiceTest {
+    public class HistoricalOverviewTest {
         [Test]
-        public void TestConnectionToEndPoint()
-        {
+        public void TestConnectionToEndPoint() {
             string validFrom = "2020-11-27";
             string validTo = "2020-12-05";
             
@@ -29,8 +25,7 @@ namespace WebServiceTest
                     Assert.Warn(string.Format("{0} Returned, but with status: {1}", 
                         url, response.StatusDescription));
                 }
-            }
-            catch (Exception ex) {
+            }catch (Exception ex) {
                 Console.Write(string.Format("{0} unavailable: {1}", url, ex.Message));
                 Assert.Fail();
             }
@@ -44,12 +39,9 @@ namespace WebServiceTest
             
             var url = "https://localhost:5001/HistoricalOverview?deviceEUI=0004A30B00219CB5&validFrom=" + validFrom + "&validTo=" + validTo;
             
-            using (var client = new HttpClient())
-            {
-                using (HttpResponseMessage responseMessage = await client.GetAsync(url))
-                {
-                    using (HttpContent content = responseMessage.Content)
-                    {
+            using (var client = new HttpClient()) {
+                using (HttpResponseMessage responseMessage = await client.GetAsync(url)) {
+                    using (HttpContent content = responseMessage.Content) {
                         var data = await content.ReadAsStringAsync();
                         var jObject = JObject.Parse(data)["detailedCo2List"].ToString();
                         var jArray = JArray.Parse(jObject);
@@ -58,23 +50,18 @@ namespace WebServiceTest
                     }
                 }
             }
-            
         }
         
         [Test]
-        public async Task TestGetHistoricalOverviewIsNotEmpty()
-        {
+        public async Task TestGetHistoricalOverviewIsNotEmpty() {
             string validFrom = "2020-11-27";
             string validTo = "2020-12-05";
             
             var url = "https://localhost:5001/HistoricalOverview?deviceEUI=0004A30B00219CB5&validFrom=" + validFrom + "&validTo=" + validTo;
             
-            using (var client = new HttpClient())
-            {
-                using (HttpResponseMessage responseMessage = await client.GetAsync(url))
-                {
-                    using (HttpContent content = responseMessage.Content)
-                    {
+            using (var client = new HttpClient()) {
+                using (HttpResponseMessage responseMessage = await client.GetAsync(url)) {
+                    using (HttpContent content = responseMessage.Content) {
                         var data = await content.ReadAsStringAsync();
                         var jObject = JObject.Parse(data)["detailedCo2List"].ToString();
                         var jArray = JArray.Parse(jObject);
@@ -83,23 +70,18 @@ namespace WebServiceTest
                     }
                 }
             }
-            
         }
         
         [Test]
-        public async Task TestGetHistoricalOverviewIsNotNullNorZero()
-        {
+        public async Task TestGetHistoricalOverviewIsNotNullNorZero() {
             string validFrom = "2020-11-27";
             string validTo = "2020-12-05";
             
             var URL = "https://localhost:5001/HistoricalOverview?deviceEUI=0004A30B00219CB5&validFrom=" + validFrom + "&validTo=" + validTo;
 
-            using (var client = new HttpClient())
-            {
-                using (HttpResponseMessage responseMessage = await client.GetAsync(URL))
-                {
-                    using (HttpContent content = responseMessage.Content)
-                    {
+            using (var client = new HttpClient()) {
+                using (HttpResponseMessage responseMessage = await client.GetAsync(URL)) {
+                    using (HttpContent content = responseMessage.Content) {
                         var data = await content.ReadAsStringAsync();
                         var jObject = JObject.Parse(data)["detailedCo2List"].ToString();
                         var jArray = JArray.Parse(jObject);

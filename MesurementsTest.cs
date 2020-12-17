@@ -8,7 +8,6 @@ using Newtonsoft.Json.Linq;
 using Assert = NUnit.Framework.Assert;
 
 namespace WebServiceTest {
-    [TestClass]
     public class MesurementsTest {
         [Test]
         public void TestConnectionToEndPoint() {
@@ -23,8 +22,7 @@ namespace WebServiceTest {
                     Assert.Warn(string.Format("{0} Returned, but with status: {1}", 
                         url, response.StatusDescription));
                 }
-            }
-            catch (Exception ex) {
+            }catch (Exception ex) {
                 Console.Write(string.Format("{0} unavailable: {1}", url, ex.Message));
                 Assert.Fail();
             }
@@ -34,20 +32,15 @@ namespace WebServiceTest {
         public async Task TestGetCo2() {
             String URL = "https://localhost:5001/Measurements?deviceEUI=0004A30B00219CAC";
             
-            using (var client = new HttpClient())
-            {
-                using (HttpResponseMessage responseMessage = await client.GetAsync(URL))
-                {
-                    using (HttpContent content = responseMessage.Content)
-                    {
+            using (var client = new HttpClient()) {
+                using (HttpResponseMessage responseMessage = await client.GetAsync(URL)) {
+                    using (HttpContent content = responseMessage.Content) {
                         var data = await content.ReadAsStringAsync();
-                        try
-                        {
+                        try {
                             var result = JObject.Parse(data)["measurementId"].ToString();
                             if(!(int.Parse(result) > 0))
                                 Assert.Fail();
-                        }
-                        catch (Exception e)
+                        }catch (Exception e)
                         {
                             Assert.Fail();
                         }

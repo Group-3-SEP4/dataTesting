@@ -10,7 +10,6 @@ namespace WebServiceTest
 {
     public class RoomsTest
     {
-        
         [Test]
         public async Task TestInitRoom() {
             String URL = "https://localhost:5001/rooms?deviceEUI=1111111111111111";
@@ -53,20 +52,15 @@ namespace WebServiceTest
         public async Task TestGetRoom() {
             String URL = "https://localhost:5001/rooms?deviceEUI=0004A30B00219CAC";
             
-            using (var client = new HttpClient())
-            {
-                using (HttpResponseMessage responseMessage = await client.GetAsync(URL))
-                {
-                    using (HttpContent content = responseMessage.Content)
-                    {
+            using (var client = new HttpClient()) {
+                using (HttpResponseMessage responseMessage = await client.GetAsync(URL)) {
+                    using (HttpContent content = responseMessage.Content) {
                         var data = await content.ReadAsStringAsync();
-                        try
-                        {
+                        try {
                             var result = JObject.Parse(data)["roomId"].ToString();
                             if(!(int.Parse(result) > 0))
                                 Assert.Fail();
-                        }
-                        catch (Exception e)
+                        }catch (Exception e)
                         {
                             Assert.Fail();
                         }
@@ -83,12 +77,9 @@ namespace WebServiceTest
             byteContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
             String URL = "https://localhost:5001/Rooms?deviceEUI=0004A30B00219CAC";
             
-            using (var client = new HttpClient())
-            {
-                using (HttpResponseMessage responseMessage = await client.PutAsync(URL, byteContent))
-                {
-                    using (HttpContent content = responseMessage.Content)
-                    {
+            using (var client = new HttpClient()) {
+                using (HttpResponseMessage responseMessage = await client.PutAsync(URL, byteContent)) {
+                    using (HttpContent content = responseMessage.Content) {
                         var data = await content.ReadAsStringAsync();
                         var result = JObject.Parse(data)["roomId"].ToString();
                         Assert.AreEqual("4", result);

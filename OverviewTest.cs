@@ -8,14 +8,10 @@ using Newtonsoft.Json.Linq;
 using NUnit.Framework;
 using Assert = NUnit.Framework.Assert;
 
-namespace WebServiceTest
-{
-    [TestClass]
-    public class OverviewTest
-    {
+namespace WebServiceTest {
+    public class OverviewTest {
         [Test]
-        public void TestConnectionToEndPoint()
-        {
+        public void TestConnectionToEndPoint() {
             var url = "https://localhost:5001/Overview?deviceEUI=0004A30B00219CAC";
             try {
                 var myRequest = (HttpWebRequest)WebRequest.Create(url);
@@ -27,24 +23,19 @@ namespace WebServiceTest
                     Assert.Warn(string.Format("{0} Returned, but with status: {1}", 
                         url, response.StatusDescription));
                 }
-            }
-            catch (Exception ex) {
+            }catch (Exception ex) {
                 Console.Write(string.Format("{0} unavailable: {1}", url, ex.Message));
                 Assert.Fail();
             }
         }
         
         [Test]
-        public async Task TestGetTodaysNightOverviewNotNull() 
-        {
+        public async Task TestGetTodaysNightOverviewNotNull() {
             String url = "https://localhost:5001/Overview?deviceEUI=0004A30B00219CB5";
             
-            using (var client = new HttpClient())
-            {
-                using (HttpResponseMessage responseMessage = await client.GetAsync(url))
-                {
-                    using (HttpContent content = responseMessage.Content)
-                    {
+            using (var client = new HttpClient()) {
+                using (HttpResponseMessage responseMessage = await client.GetAsync(url)) {
+                    using (HttpContent content = responseMessage.Content) {
                         var data = await content.ReadAsStringAsync();
                         var result = JObject.Parse(data)["humiMin"].ToString();
                         Assert.IsNotNull(result);
@@ -54,16 +45,12 @@ namespace WebServiceTest
         }
         
         [Test]
-        public async Task TestGetTodaysNightOverviewIsNotEmpty() 
-        {
+        public async Task TestGetTodaysNightOverviewIsNotEmpty() {
             String url = "https://localhost:5001/Overview?deviceEUI=0004A30B00219CB5";
             
-            using (var client = new HttpClient())
-            {
-                using (HttpResponseMessage responseMessage = await client.GetAsync(url))
-                {
-                    using (HttpContent content = responseMessage.Content)
-                    {
+            using (var client = new HttpClient()) {
+                using (HttpResponseMessage responseMessage = await client.GetAsync(url)) {
+                    using (HttpContent content = responseMessage.Content) {
                         var data = await content.ReadAsStringAsync();
                         // Min Humidity
                         var result = JObject.Parse(data)["humiMax"].ToString();
@@ -75,16 +62,12 @@ namespace WebServiceTest
         }
         
         [Test]
-        public async Task TestGetTodaysNightOverviewIsNotNullNorZero() 
-        {
+        public async Task TestGetTodaysNightOverviewIsNotNullNorZero() {
             String url = "https://localhost:5001/Overview?deviceEUI=0004A30B00219CB5";
             
-            using (var client = new HttpClient())
-            {
-                using (HttpResponseMessage responseMessage = await client.GetAsync(url))
-                {
-                    using (HttpContent content = responseMessage.Content)
-                    {
+            using (var client = new HttpClient()) {
+                using (HttpResponseMessage responseMessage = await client.GetAsync(url)) {
+                    using (HttpContent content = responseMessage.Content) {
                         var data = await content.ReadAsStringAsync();
                         // Min Humidity
                         var result = JObject.Parse(data)["tempAvg"].ToString();

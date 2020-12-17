@@ -283,3 +283,4 @@ C:\Users\krogh\Desktop\SEP4 Source Code\Data Unit Test\obj\Debug\netcoreapp3.1\W
 C:\Users\krogh\Desktop\SEP4 Source Code\Data Unit Test\obj\Debug\netcoreapp3.1\WebServiceTest.dll
 C:\Users\krogh\Desktop\SEP4 Source Code\Data Unit Test\obj\Debug\netcoreapp3.1\WebServiceTest.pdb
 C:\Users\krogh\Desktop\SEP4 Source Code\Data Unit Test\obj\Debug\netcoreapp3.1\WebServiceTest.genruntimeconfig.cache
+C:\Users\Rokas\Desktop\dataTesting\bin\Debug\netcoreapp3.1\testhost.exe
