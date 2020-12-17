@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\krogh\\Desktop\\SEP4 Source Code\\Data Unit Test\\WebServiceTest.csproj": {}
+    "C:\\Users\\Rokas\\Desktop\\dataTesting\\WebServiceTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\krogh\\Desktop\\SEP4 Source Code\\Data Unit Test\\WebServiceTest.csproj": {
+    "C:\\Users\\Rokas\\Desktop\\dataTesting\\WebServiceTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\krogh\\Desktop\\SEP4 Source Code\\Data Unit Test\\WebServiceTest.csproj",
+        "projectUniqueName": "C:\\Users\\Rokas\\Desktop\\dataTesting\\WebServiceTest.csproj",
         "projectName": "WebServiceTest",
-        "projectPath": "C:\\Users\\krogh\\Desktop\\SEP4 Source Code\\Data Unit Test\\WebServiceTest.csproj",
-        "packagesPath": "C:\\Users\\krogh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\krogh\\Desktop\\SEP4 Source Code\\Data Unit Test\\obj\\",
+        "projectPath": "C:\\Users\\Rokas\\Desktop\\dataTesting\\WebServiceTest.csproj",
+        "packagesPath": "C:\\Users\\Rokas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rokas\\Desktop\\dataTesting\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\krogh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Rokas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -78,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

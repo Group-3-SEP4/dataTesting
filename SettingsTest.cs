@@ -51,7 +51,7 @@ namespace WebServiceTest {
         
         [Test]
         public async Task TestPostSettings() {
-            string contentPost = "{\"settingsId\":6,\"lastUpdated\":\"2020-12-08T14:52:43.723\",\"temperatureSetpoint\":18.0,\"ppmMin\":400,\"ppmMax\":5000,\"sentToDevice\":null}";
+            string contentPost = "{\"settingsId\":5,\"lastUpdated\":\"2020-12-08T14:52:43.723\",\"temperatureSetpoint\":25.0,\"ppmMin\":100,\"ppmMax\":1100,\"sentToDevice\":null}";
             var buffer = System.Text.Encoding.UTF8.GetBytes(contentPost);
             var byteContent = new ByteArrayContent(buffer);
             byteContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
@@ -65,7 +65,7 @@ namespace WebServiceTest {
                     {
                         var data = await content.ReadAsStringAsync();
                         var result = JObject.Parse(data)["settingsId"].ToString();
-                        Assert.AreEqual("6", result);
+                        Assert.AreEqual("5", result);
                     }
                 }
             }

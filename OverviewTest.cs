@@ -11,12 +11,12 @@ using Assert = NUnit.Framework.Assert;
 namespace WebServiceTest
 {
     [TestClass]
-    public class NightOverviewTest
+    public class OverviewTest
     {
         [Test]
         public void TestConnectionToEndPoint()
         {
-            var url = "https://localhost:5001/Overview/Today?deviceEUI=0004A30B00219CAC";
+            var url = "https://localhost:5001/Overview?deviceEUI=0004A30B00219CAC";
             try {
                 var myRequest = (HttpWebRequest)WebRequest.Create(url);
                 var response = (HttpWebResponse)myRequest.GetResponse();
@@ -37,7 +37,7 @@ namespace WebServiceTest
         [Test]
         public async Task TestGetTodaysNightOverviewNotNull() 
         {
-            String url = "https://localhost:5001/Overview/Today?deviceEUI=0004A30B00219CB5";
+            String url = "https://localhost:5001/Overview?deviceEUI=0004A30B00219CB5";
             
             using (var client = new HttpClient())
             {
@@ -46,19 +46,17 @@ namespace WebServiceTest
                     using (HttpContent content = responseMessage.Content)
                     {
                         var data = await content.ReadAsStringAsync();
-                        var jArray = JArray.Parse(data);
-                        var result = JObject.Parse(jArray[0].ToString())["humiMin"].ToString();
+                        var result = JObject.Parse(data)["humiMin"].ToString();
                         Assert.IsNotNull(result);
                     }
                 }
             }
-    
         }
         
         [Test]
         public async Task TestGetTodaysNightOverviewIsNotEmpty() 
         {
-            String url = "https://localhost:5001/Overview/Today?deviceEUI=0004A30B00219CB5";
+            String url = "https://localhost:5001/Overview?deviceEUI=0004A30B00219CB5";
             
             using (var client = new HttpClient())
             {
@@ -67,22 +65,19 @@ namespace WebServiceTest
                     using (HttpContent content = responseMessage.Content)
                     {
                         var data = await content.ReadAsStringAsync();
-                        var jArray = JArray.Parse(data);
                         // Min Humidity
-                        var result = JObject.Parse(jArray[0].ToString())["humiMax"].ToString();
+                        var result = JObject.Parse(data)["humiMax"].ToString();
                         Assert.IsNotEmpty(result);
                         if (result == null || result == "0") Assert.Fail();
-
                     }
                 }
             }
-    
         }
         
         [Test]
         public async Task TestGetTodaysNightOverviewIsNotNullNorZero() 
         {
-            String url = "https://localhost:5001/Overview/Today?deviceEUI=0004A30B00219CB5";
+            String url = "https://localhost:5001/Overview?deviceEUI=0004A30B00219CB5";
             
             using (var client = new HttpClient())
             {
@@ -91,16 +86,12 @@ namespace WebServiceTest
                     using (HttpContent content = responseMessage.Content)
                     {
                         var data = await content.ReadAsStringAsync();
-                        var jArray = JArray.Parse(data);
                         // Min Humidity
-                        var result = JObject.Parse(jArray[0].ToString())["tempAvg"].ToString();
+                        var result = JObject.Parse(data)["tempAvg"].ToString();
                         if (result == null || result == "0") Assert.Fail();
-
                     }
                 }
             }
-    
         }
-        
     }
 }

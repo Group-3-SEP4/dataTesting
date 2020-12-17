@@ -15,7 +15,6 @@
       <e p="bin" t="ExcludeRecursive" />
       <e p="HistoricalOverviewTest.cs" t="Include" />
       <e p="MesurementsTest.cs" t="Include" />
-      <e p="NightOverviewTest.cs" t="Include" />
       <e p="obj" t="ExcludeRecursive">
         <e p="Debug" t="Include">
           <e p="netcoreapp3.1" t="Include">
@@ -23,6 +22,7 @@
           </e>
         </e>
       </e>
+      <e p="OverviewTest.cs" t="Include" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="RoomsTest.cs" t="Include" />
       <e p="SettingsTest.cs" t="Include" />
